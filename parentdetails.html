@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent id Login Page</title>
+</head>
+<style>
+    body{
+        background-image: url(pagebackground.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h1{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+        font-size: 30px;
+        color: rgb(234, 237, 156);
+        padding-left: 30%;
+        display: inline-block;
+    }
+    img{
+        align-items: left;
+        height: 100px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    h2{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        font-size: 20px;
+        color: rgb(234, 237, 156);
+        padding-left: 35%;
+    }
+    fieldset{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        border-radius: 10px;
+        color: rgb(234, 237, 156);
+        font-size: 25px;
+    }
+    label{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    }
+    p{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        font-size: 20px;
+        color: rgb(234, 237, 156);
+    }
+</style>
+<header>
+    <img src="schoollogo.jpg" alt="logo">
+    <h1><u><b>SCHOOL NAME GOES HERE</b></u></h1><hr>
+</header>
+<body onload="getDetails()">
+    <fieldset>
+        <legend>REGISTRATION DETAILS:</legend>
+        <p id="stdname">Student name: </p>
+        <p id="stdreg">Student regno: </p>
+        <p id="stdroll">Student rollno: </p><hr>
+        <p id="pntname">Parent name: </p>
+        <p id="pntpno">Parent contact no: </p>
+        <p id="pntrel">Parent relation to student: </p>
+        <p id="pntocc">Parent occupation: </p>
+    </fieldset><br>
+    <input type="button" value="Back To Login" name="backtologin" id="backtologin" onclick="gotoLoginPage()" style="width: 120px; height: 30px; border-radius: 10px; border: 1px">
+</body>
+<script>
+    function getDetails(){
+        let details=new URLSearchParams(window.location.search);
+
+        document.getElementById("stdname").textContent+=details.get("stdname");
+        document.getElementById("stdreg").textContent+=details.get("stdreg");
+        document.getElementById("stdroll").textContent+=details.get("stdroll");
+
+        document.getElementById("pntname").textContent+=details.get("pntname");
+        document.getElementById("pntpno").textContent+=details.get("pntpno");
+        document.getElementById("pntrel").textContent+=details.get("pntrel");
+        document.getElementById("pntocc").textContent+=details.get("pntocc");
+
+    }
+    function gotoLoginPage(){
+        window.location.href="parentidlogin.html";
+    }
+</script>
+</html>
