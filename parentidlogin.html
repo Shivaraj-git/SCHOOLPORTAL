@@ -54,10 +54,15 @@
             
             <h2 style="padding-left: 34%;padding-top: 1%;">Password: <input type="password" style="width: 322px; height:30px;border-radius:5px; border: 1px;" id="parentpass" name="parentpass" placeholder="Enter password"></h2><br>
             
-            <h2 style="padding-left: 47%;"><input type="submit" style="background-color:rgb(172, 150, 180);color: rgb(255, 255, 255); width: 100px; height:35px;border-radius:10px; border: 1px;" id="signin" name="signin" value="SIGN IN"></h2><br>
-            
-            <h2 style="font-size: 18px;padding-left: 36%;">Don't have parent id? <a href="parentsignup.html" style="color: rgb(234, 237, 156);">Click here to sign up</a></h2><br>
+            <h2 style="padding-left: 48%;"><input type="submit" style="background-color:rgb(172, 150, 180);color: rgb(255, 255, 255); width: 100px; height:35px;border-radius:10px; border: 1px;" id="signin" name="signin" value="SIGN IN"></h2><br>
+
+            <h2 style="font-size: 18px;padding-left: 39%;">Don't have parent id? <input type="button" name="signup" id="signup" value="SIGN UP" onclick="signuppage()" style="background-color:rgb(172, 150, 180);color: rgb(255, 255, 255); width: 100px; height:35px;border-radius:10px; border: 1px;"></h2><br>
         </fieldset>
     </form>
 </body>
+<script>
+    function signuppage(){
+        window.location.href="parentsignup.html";
+    }
+</script>
 </html>
