@@ -4,45 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parent id Login Page</title>
-</head>
-<style>
-    body{
-        background-image: url(pagebackground.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    h1{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
-        font-size: 30px;
-        color: rgb(234, 237, 156);
-        padding-left: 30%;
-        display: inline-block;
-    }
-    img{
-        align-items: left;
-        height: 100px;
-        display: inline-block;
-        vertical-align: middle;
-    }
-    h2{
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-        font-size: 20px;
-        color: rgb(234, 237, 156);
-        padding-left: 35%;
-    }
-    fieldset{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-        border-radius: 10px;
-        color: rgb(234, 237, 156);
-        font-size: 25px;
-    }
-    label{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-    }
-</style>
+    <link rel="stylesheet" href="styles.css">
+</head>  
 <header>
-    <img src="schoollogo.jpg" alt="logo">
-    <h1><u><b>SCHOOL NAME GOES HERE</b></u></h1><hr>
+    <img src="schoollogo.png" alt="logo">
+    <h1><u><b>SJM SCHOOL</b></u></h1>
 </header>
 <body>
     <br><br>
@@ -50,19 +16,18 @@
         <fieldset>
             <legend>PARENT ID LOGIN</legend><br>
             
-            <h2>ParentID:  <input type="text" style="width: 300px; height:30px;border-radius:5px; border: 1px;" id="parentid" name="parentid" placeholder="Enter registered parentID" > </h2>
+            <h2>ParentID:  <input type="text" id="parentid" name="parentid" placeholder="Enter registered parentID" > </h2>
             
-            <h2 style="padding-left: 34%;padding-top: 1%;">Password: <input type="password" style="width: 322px; height:30px;border-radius:5px; border: 1px;" id="parentpass" name="parentpass" placeholder="Enter password"></h2><br>
+            <h2 >Password: <input type="password" id="parentpass" name="parentpass" placeholder="Enter password"></h2><br>
             
-            <h2 style="padding-left: 48%;"><input type="submit" style="background-color:rgb(172, 150, 180);color: rgb(255, 255, 255); width: 100px; height:35px;border-radius:10px; border: 1px;" id="signin" name="signin" value="SIGN IN"></h2><br>
-
-            <h2 style="font-size: 18px;padding-left: 39%;">Don't have parent id? <input type="button" name="signup" id="signup" value="SIGN UP" onclick="signuppage()" style="background-color:rgb(172, 150, 180);color: rgb(255, 255, 255); width: 100px; height:35px;border-radius:10px; border: 1px;"></h2><br>
+            <h2 ><input type="submit"  id="signin" name="signin" value="SIGN IN"></h2><br>
+            
+            <h2 >Don't have parent id? <a href="parentsignup.html" >Click here to sign up</a></h2><br>
         </fieldset>
     </form>
 </body>
-<script>
-    function signuppage(){
-        window.location.href="parentsignup.html";
-    }
-</script>
+<footer>
+    © 2025 School Name. All Rights Reserved.
+</footer>
 </html>
+
