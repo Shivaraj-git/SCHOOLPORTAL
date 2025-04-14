@@ -1,0 +1,23 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f7f4e1;
+}
+
+.card {
+  background-color: #bcb9b9;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 6px;
+  width: 500px;
+  text-align: left;
+}
+
+h2 {
+  color: #000000;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}

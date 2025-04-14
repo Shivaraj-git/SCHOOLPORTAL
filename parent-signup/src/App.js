@@ -1,0 +1,11 @@
+import ParentSignupForm from './ParentSignupForm';
+
+function App() {
+  return (
+    <div>
+      <ParentSignupForm />
+    </div>
+  );
+}
+
+export default App;
